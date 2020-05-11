@@ -1,10 +1,6 @@
-<div class="text-center">
-    <img src="https://www.thesportsdb.com/images/media/league/badge/xj0p1n1534589660.png" alt="WRC LOGO"
-        style="width: 300px;">
-</div>
-<h1 class="mb-5 text-muted" style="text-align: center; font-weight: 700;">2020 WRC Drivers</h1>
+<h2 class="mb-5 mt-5 text-muted" style="text-align: center; font-weight: 700;">2020 WRC Drivers</h2>
 
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-4 mb-4" *ngFor="let driver of drivers">
             <div class="card" style="justify-content: space-around; max-width: 400px;">
@@ -18,5 +14,12 @@
                 </div>
             </div>
         </div>
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <app-driver-preview *ngFor="let driver of drivers" [driver]="driver" class="col-lg-4 col-sm-6 mb-4">
+        </app-driver-preview>
     </div>
 </div>
