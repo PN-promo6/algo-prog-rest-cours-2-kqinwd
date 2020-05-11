@@ -133,6 +133,7 @@ testdrives = [
     {
         id: "1",
         driverID: "9",
+        driverName: "Sébastien OGIER",
         title: "Monte-Carlo testdays",
         link: "https://youtu.be/v9XTi0pWy6Q",
         date: "2020-04-14T10:01:48 -02:00",
@@ -142,6 +143,7 @@ testdrives = [
     {
         id: "2",
         driverID: "6",
+        driverName: "Sébastien LOEB",
         title: "TestDayz Loeb",
         link: "https://youtu.be/eo0fyz4qG14",
         date: "2020-01-24T07:04:14 -01:00",
@@ -151,6 +153,7 @@ testdrives = [
     {
         id: "3",
         driverID: "4",
+        driverName: "Ott TÄNAK",
         title: "Tänak crash",
         link: "https://youtu.be/qfgtins1HC8",
         date: "2020-01-22T03:23:26 -01:00",
@@ -160,6 +163,7 @@ testdrives = [
     {
         id: "4",
         driverID: "10",
+        driverName: "Elfyn EVANS",
         title: "OnBoard test drive",
         link: "https://youtu.be/G6xj__FgdKs",
         date: "2015-11-26T08:27:39 -01:00",
