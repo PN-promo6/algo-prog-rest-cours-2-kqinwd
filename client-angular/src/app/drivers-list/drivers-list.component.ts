@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data-service/data.service';
+import { Driver } from '../models/driver/driver';
 
 @Component({
   selector: 'app-drivers-list',
@@ -8,8 +9,8 @@ import { DataService } from '../services/data-service/data.service';
 })
 export class DriversListComponent implements OnInit {
 
-  drivers: any;
-  singleDriver: any;
+  public drivers: Driver[];
+  public singleDriver: Driver[];
 
   constructor(private dataService: DataService) { }
 
@@ -26,7 +27,8 @@ export class DriversListComponent implements OnInit {
 
         }
       );
-    this.dataService.fetchDriverById(1) // On doit passer en paramètre un id puisqu'on a défini la fonction avec un paramètre dans le DataService
+
+    this.dataService.fetchDriverById("1") // On doit passer en paramètre un id puisqu'on a défini la fonction avec un paramètre dans le DataService
       .subscribe(
         res => {
           console.log(res);
